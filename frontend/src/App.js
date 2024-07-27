@@ -34,7 +34,7 @@ function App() {
       try {
         const userId = localStorage.getItem('userId');
         const token = localStorage.getItem('token');
-        const response = await axios.get(`http://localhost:8080/api/v1/user/get-user/${userId}`, {
+        const response = await axios.get(`https://baryoworkcopyapi.onrender.com/api/v1/user/get-user/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -100,7 +100,7 @@ function App() {
       try {
         const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://localhost:8080/api/v1/profile/get-profile',
+          'https://baryoworkcopyapi.onrender.com/api/v1/profile/get-profile',
           {
             headers: {
               Authorization: `Bearer ${token}`
@@ -111,7 +111,7 @@ function App() {
         const imageId = response.data.profile.image
 
         const imageResponse = await axios.get(
-          `http://localhost:8080/api/v1/image/get-image/${imageId}`,
+          `https://baryoworkcopyapi.onrender.com/api/v1/image/get-image/${imageId}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem('token')}`
