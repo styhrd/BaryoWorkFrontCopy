@@ -17,7 +17,7 @@ const AcceptedProfiles = ({ acceptedApplicants, closeModal }) => {
                 const applicantsForPage = acceptedApplicants.slice(startIndex, endIndex);
                 // Assuming the acceptedApplicants array contains the IDs of applicants
                 const profilesPromises = applicantsForPage.map(async (applicantId) => {
-                    const response = await axios.get(`http://localhost:8080/api/v1/apply/getappprofile/${applicantId}`, {
+                    const response = await axios.get(`https://baryoworkcopyapi.onrender.com/api/v1/apply/getappprofile/${applicantId}`, {
                         headers: {
                             Authorization: `Bearer ${token}`
                         }

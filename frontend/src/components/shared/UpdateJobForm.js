@@ -19,7 +19,7 @@ const UpdateJobForm = ({ jobId }) => {
             try {
                 const token = localStorage.getItem('token');
                 const response = await axios.get(
-                    `http://localhost:8080/api/v1/job/get-job/${jobId}`,
+                    `https://baryoworkcopyapi.onrender.com/api/v1/job/get-job/${jobId}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -51,7 +51,7 @@ const UpdateJobForm = ({ jobId }) => {
         try {
             const token = localStorage.getItem('token');
             await axios.patch(
-                `http://localhost:8080/api/v1/job/update-job/${jobId}`,
+                `https://baryoworkcopyapi.onrender.com/api/v1/job/update-job/${jobId}`,
                 formData,
                 {
                     headers: {

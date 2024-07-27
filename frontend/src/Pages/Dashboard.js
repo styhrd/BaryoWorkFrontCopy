@@ -18,7 +18,7 @@ const Dashboard = () => {
             try {
                 const userId = localStorage.getItem('userId');
                 const token = localStorage.getItem('token');
-                const response = await axios.get(`http://localhost:8080/api/v1/user/get-user/${userId}`, {
+                const response = await axios.get(`https://baryoworkcopyapi.onrender.com/api/v1/user/get-user/${userId}`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -38,7 +38,7 @@ const Dashboard = () => {
             try {
                 const token = localStorage.getItem('token');
                 const response = await axios.get(
-                    'http://localhost:8080/api/v1/profile/get-profile',
+                    'https://baryoworkcopyapi.onrender.com/api/v1/profile/get-profile',
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -62,7 +62,7 @@ const Dashboard = () => {
         const fetchJobs = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get('http://localhost:8080/api/v1/job/get-jobs', {
+                const response = await axios.get('https://baryoworkcopyapi.onrender.com/api/v1/job/get-jobs', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     },
@@ -88,7 +88,7 @@ const Dashboard = () => {
         try {
             const token = localStorage.getItem('token');
             await axios.post(
-                `http://localhost:8080/api/v1/apply/apply`,
+                `https://baryoworkcopyapi.onrender.com/api/v1/apply/apply`,
                 { jobId },
                 {
                     headers: {
@@ -113,7 +113,7 @@ const Dashboard = () => {
         const fetchAppliedJobs = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get('http://localhost:8080/api/v1/apply/appliedJobs', {
+                const response = await axios.get('https://baryoworkcopyapi.onrender.com/api/v1/apply/appliedJobs', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

@@ -32,7 +32,7 @@ const AddImage = () => {
                 }
             };
             // Make the POST request to upload the image
-            const response = await axios.post('http://localhost:8080/api/v1/image/upload-image', formData, config);
+            const response = await axios.post('https://baryoworkcopyapi.onrender.com/api/v1/image/upload-image', formData, config);
             console.log('Image uploaded successfully:', response.data);
             localStorage.setItem('imageId', response.data.image._id);
             window.location.reload()

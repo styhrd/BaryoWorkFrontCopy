@@ -29,7 +29,7 @@ const SearchJobs = () => {
             try {
                 const token = localStorage.getItem('token');
                 const response = await axios.get(
-                    `http://localhost:8080/api/v1/job/get-jobs?page=${currentPageForAllJobs}&limit=5`,
+                    `https://baryoworkcopyapi.onrender.com/api/v1/job/get-jobs?page=${currentPageForAllJobs}&limit=5`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -56,7 +56,7 @@ const SearchJobs = () => {
             try {
                 const token = localStorage.getItem('token');
                 const response = await axios.get(
-                    `http://localhost:8080/api/v1/job/job-skills?page=${currentPageForSkillJobs}&limit=5`,
+                    `https://baryoworkcopyapi.onrender.com/api/v1/job/job-skills?page=${currentPageForSkillJobs}&limit=5`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -79,7 +79,7 @@ const SearchJobs = () => {
             try {
                 const token = localStorage.getItem('token');
                 const response = await axios.get(
-                    `http://localhost:8080/api/v1/job/job-location?page=${currentPageForLocationJobs}&limit=5`,
+                    `https://baryoworkcopyapi.onrender.com/api/v1/job/job-location?page=${currentPageForLocationJobs}&limit=5`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -113,7 +113,7 @@ const SearchJobs = () => {
         try {
             const token = localStorage.getItem('token');
             await axios.post(
-                `http://localhost:8080/api/v1/apply/apply`,
+                `https://baryoworkcopyapi.onrender.com/api/v1/apply/apply`,
                 { jobId },
                 {
                     headers: {

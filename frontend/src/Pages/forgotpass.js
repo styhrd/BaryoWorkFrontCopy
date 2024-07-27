@@ -12,7 +12,7 @@ const Forgotpass = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`http://localhost:8080/api/v1/user/forgotpass`, { email });
+            const response = await axios.post(`https://baryoworkcopyapi.onrender.com/api/v1/user/forgotpass`, { email });
             if (response.data.Status === "Success") {
                 toast.success('Password reset link sent successfully');
                 navigate('/login');

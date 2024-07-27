@@ -20,7 +20,7 @@ const CreateProfileForm = () => {
 
         try {
             const response = await axios.post(
-                'http://localhost:8080/api/v1/profile/create-profile',
+                'https://baryoworkcopyapi.onrender.com/api/v1/profile/create-profile',
                 {
                     description,
                     location,

@@ -19,7 +19,7 @@ const ApplicantProfilesModal = ({ applicants, closeModal }) => {
 
                 // Fetch profiles for each applicant asynchronously
                 const profilesPromises = applicantsForPage.map(async (applicantId) => {
-                    const response = await axios.get(`http://localhost:8080/api/v1/apply/getappprofile/${applicantId}`, {
+                    const response = await axios.get(`https://baryoworkcopyapi.onrender.com/api/v1/apply/getappprofile/${applicantId}`, {
                         headers: {
                             Authorization: `Bearer ${token}`
                         }
@@ -63,7 +63,7 @@ const ApplicantProfilesModal = ({ applicants, closeModal }) => {
         try {
             const token = localStorage.getItem('token');
             await axios.post(
-                'http://localhost:8080/api/v1/apply/accept',
+                'https://baryoworkcopyapi.onrender.com/api/v1/apply/accept',
                 { applicantId },
                 {
                     headers: {
@@ -84,7 +84,7 @@ const ApplicantProfilesModal = ({ applicants, closeModal }) => {
         try {
             const token = localStorage.getItem('token');
             await axios.post(
-                'http://localhost:8080/api/v1/apply/reject',
+                'https://baryoworkcopyapi.onrender.com/api/v1/apply/reject',
                 { applicantId },
                 {
                     headers: {

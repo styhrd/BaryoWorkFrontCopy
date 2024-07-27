@@ -20,7 +20,7 @@ const ExperienceForm = () => {
 
         try {
             const response = await axios.post(
-                'http://localhost:8080/api/v1/experience/create-exp',
+                'https://baryoworkcopyapi.onrender.com/api/v1/experience/create-exp',
                 {
                     company,
                     startDate,

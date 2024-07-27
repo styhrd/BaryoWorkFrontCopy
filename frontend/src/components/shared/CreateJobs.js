@@ -23,7 +23,7 @@ const CreateJobForm = () => {
 
         try {
             const response = await axios.post(
-                'http://localhost:8080/api/v1/job/create-job',
+                'https://baryoworkcopyapi.onrender.com/api/v1/job/create-job',
                 {
                     company,
                     jobtitle: jobTitle,

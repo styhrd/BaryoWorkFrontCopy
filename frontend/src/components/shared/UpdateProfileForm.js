@@ -30,7 +30,7 @@ const UpdateProfileForm = ({ profile }) => {
 
         try {
             const response = await axios.patch( // Use axios.patch instead of axios.put
-                `http://localhost:8080/api/v1/profile/update-profile/${profileId}`,
+                `https://baryoworkcopyapi.onrender.com/api/v1/profile/update-profile/${profileId}`,
                 formData,
                 {
                     headers: {

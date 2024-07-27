@@ -35,7 +35,7 @@ const ProfilePage = () => {
             try {
                 const token = localStorage.getItem('token');
                 const response = await axios.get(
-                    'http://localhost:8080/api/v1/profile/get-profile',
+                    'https://baryoworkcopyapi.onrender.com/api/v1/profile/get-profile',
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -48,7 +48,7 @@ const ProfilePage = () => {
                 const imageId = response.data.profile.image
 
                 const imageResponse = await axios.get(
-                    `http://localhost:8080/api/v1/image/get-image/${imageId}`,
+                    `https://baryoworkcopyapi.onrender.com/api/v1/image/get-image/${imageId}`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem('token')}`
@@ -80,7 +80,7 @@ const ProfilePage = () => {
             try {
                 const userId = localStorage.getItem('userId');
                 const token = localStorage.getItem('token');
-                const response = await axios.get(`http://localhost:8080/api/v1/user/get-user/${userId}`, {
+                const response = await axios.get(`https://baryoworkcopyapi.onrender.com/api/v1/user/get-user/${userId}`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -104,7 +104,7 @@ const ProfilePage = () => {
             const token = localStorage.getItem('token');
             const detailsPromises = experienceIds.map(async (id) => {
                 const response = await axios.get(
-                    `http://localhost:8080/api/v1/experience/get-exp/${id}`,
+                    `https://baryoworkcopyapi.onrender.com/api/v1/experience/get-exp/${id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -126,7 +126,7 @@ const ProfilePage = () => {
             const token = localStorage.getItem('token');
             const detailsPromises2 = educationIds.map(async (id) => {
                 const response2 = await axios.get(
-                    `http://localhost:8080/api/v1/education/get-educ/${id}`,
+                    `https://baryoworkcopyapi.onrender.com/api/v1/education/get-educ/${id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -149,7 +149,7 @@ const ProfilePage = () => {
         try {
             const token = localStorage.getItem('token');
             const response = await axios.patch(
-                `http://localhost:8080/api/v1/education/update-educ/${selectedEducation._id}`, // Make sure the URL is correct
+                `https://baryoworkcopyapi.onrender.com/api/v1/education/update-educ/${selectedEducation._id}`, // Make sure the URL is correct
                 updatedEducation, // Send the updatedEducation object as the request body
                 {
                     headers: {
@@ -179,7 +179,7 @@ const ProfilePage = () => {
         try {
             const token = localStorage.getItem('token');
             const response = await axios.delete(
-                `http://localhost:8080/api/v1/education/delete-educ/${id}`, // Endpoint for deleting education
+                `https://baryoworkcopyapi.onrender.com/api/v1/education/delete-educ/${id}`, // Endpoint for deleting education
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -231,7 +231,7 @@ const ProfilePage = () => {
             }
 
             // Fetch the user data
-            const response = await axios.get(`http://localhost:8080/api/v1/user/get-user/${userId}`, {
+            const response = await axios.get(`https://baryoworkcopyapi.onrender.com/api/v1/user/get-user/${userId}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -256,7 +256,7 @@ const ProfilePage = () => {
         try {
             const token = localStorage.getItem('token');
             const response = await axios.delete(
-                `http://localhost:8080/api/v1/experience/delete-exp/${id}`,
+                `https://baryoworkcopyapi.onrender.com/api/v1/experience/delete-exp/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -278,7 +278,7 @@ const ProfilePage = () => {
         try {
             const token = localStorage.getItem('token');
             const response = await axios.patch(
-                `http://localhost:8080/api/v1/experience/update-exp/${selectedExperience._id}`,
+                `https://baryoworkcopyapi.onrender.com/api/v1/experience/update-exp/${selectedExperience._id}`,
                 updatedExperience,
                 {
                     headers: {

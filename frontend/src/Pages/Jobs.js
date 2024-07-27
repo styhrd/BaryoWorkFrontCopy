@@ -64,7 +64,7 @@ const Jobs = () => {
             try {
                 const token = localStorage.getItem('token');
                 const response = await axios.get(
-                    'http://localhost:8080/api/v1/job/created-jobs',
+                    'https://baryoworkcopyapi.onrender.com/api/v1/job/created-jobs',
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -93,7 +93,7 @@ const Jobs = () => {
         try {
             const token = localStorage.getItem('token');
             await axios.delete(
-                `http://localhost:8080/api/v1/job/delete-job/${id}`,
+                `https://baryoworkcopyapi.onrender.com/api/v1/job/delete-job/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

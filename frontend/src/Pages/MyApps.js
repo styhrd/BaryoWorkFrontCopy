@@ -15,7 +15,7 @@ const MyApps = () => {
             setLoading(true);
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get('http://localhost:8080/api/v1/apply/appliedJobs', {
+                const response = await axios.get('https://baryoworkcopyapi.onrender.com/api/v1/apply/appliedJobs', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     },
@@ -45,7 +45,7 @@ const MyApps = () => {
     const handleDelete = async (appliedJobId) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.delete(`http://localhost:8080/api/v1/apply/deleteaj/${appliedJobId}`, {
+            await axios.delete(`https://baryoworkcopyapi.onrender.com/api/v1/apply/deleteaj/${appliedJobId}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
