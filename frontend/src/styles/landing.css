@@ -1,0 +1,263 @@
+
+*{
+    padding:0;
+    margin:0;
+    scroll-behavior:smooth;
+}
+
+.landing-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-main{
+    position:sticky;
+    top:0;
+}
+
+.landing-nav{
+    display:flex;
+    justify-content: space-between;
+    padding: 1em 15em;
+    background-color:#0651CC;
+}
+
+.landing-nav ul{
+    display:flex;
+    gap: 1em;
+    list-style-type: none;
+}
+
+.landing-nav ul li{
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    font-family: archivo;
+}
+
+.landing-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.landing-nav ul li:hover{
+    border-bottom: 2px solid white;
+}
+
+.landing-buttons{
+    display:flex;
+    gap: 1em;
+}
+
+.landing-buttons button{
+    border: none;
+    border-radius:5px;
+    padding: 10px 20px;
+    font-family: archivo;
+
+}
+
+.landing-buttons button:hover{
+    background: lightblue;
+}
+
+.landing-content{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height:80vh;
+    background:white;
+    padding: 1em;
+}
+
+.landing-left{
+    width:50%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    
+}
+
+.landing-left .head{
+    font-family: Archivo;
+    font-size: 4em;
+    font-weight: 400;
+    margin-bottom: .5em;
+}
+
+.landing-left .desc{
+    font-family: Montserrat;
+    font-size: 1.1em;
+    font-weight: 320;
+    margin-bottom: .5em;
+    text-align: left;
+}
+
+.landing-right{
+    display:grid;
+    place-items:center;
+    width:40%;
+}
+
+.landing-right img{
+    width: 500px;
+}
+
+.landing-content-button{
+    display:flex;
+    justify-content:left;
+    flex-direction: row;
+    margin-top: 1em;
+    gap: 10px;
+}
+
+.landing-content-button button{
+    border: none;
+    border-radius:5px;
+    padding: 20px 40px;
+    font-family: archivo;
+    background: #0651CC;
+    color: #fff;
+    margin-bottom: .25em;
+}
+
+.landing-content-button button:hover {
+    border: 1px solid #0651CC;
+    background: white;
+    color: #0651CC;
+}
+
+.landing-feature{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    margin: 10px;
+    margin-bottom: 1em;
+}
+
+.landing-window1{
+    display:flex;
+    width:100%;
+    align-items:center;
+    gap:30px;
+    flex-direction:row;
+    margin-bottom: 1.5em;
+    justify-content:center;
+    }
+
+.landing-window2{
+    display:flex;
+    width:100%;
+    align-items:center;
+    gap:30px;
+    flex-direction:row;
+    margin-bottom: 4em;
+    justify-content:center;
+}
+
+.feature-header{
+    font-family: archivo;
+    font-size:2em;
+    font-weight: 600;
+    margin-bottom: .5em;
+    margin: 20px;
+}
+
+.feature-header1{
+    font-family: archivo;
+    font-size:2em;
+    font-weight: 600;
+    margin-bottom: .5em;
+    margin: 20px;
+    color: #fff;
+}
+
+
+.feature-header2{
+    font-family: archivo;
+    font-size:2em;
+    font-weight: 600;
+    margin-bottom: .5em;
+    margin: 20px;
+    color: #fff;
+}
+
+.feature-desc{
+    font-family: Montserrat;
+    font-size: 1em;
+    font-weight: 300;
+    max-width:400px;
+    margin: 20px;
+
+}
+
+.feature-desc2{
+    font-family: Montserrat;
+    font-size: 1em;
+    font-weight: 300;
+    max-width:400px;
+    margin: 20px;
+    color: #fff;
+}
+
+.feature-desc1{
+    font-family: Montserrat;
+    font-size: 1em;
+    font-weight: 300;
+    max-width:400px;
+    margin: 20px;
+    color: #fff;
+}
+
+.landing-try{
+        border: 0px solid;
+        border-radius: 30px;
+        padding: 4em;
+}
+
+.landing-findjob {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.landing-hire{
+    background:#0651CC;
+    border-radius: 5px;  
+}
+
+.landing-fast{
+    background: #0651CC;
+    border-radius: 5px;
+}
+
+.landing-filter {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.landing-about{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.landing-abt-desc{
+    font-family: Montserrat;
+    font-size: 1.5em;
+    width: 100;
+    padding: 1em 4em;
+    text-align: justify;
+}
+
+
+@media (max-width:600px){
+  .content{
+    flex-direction:column;
+  }  
+}
+

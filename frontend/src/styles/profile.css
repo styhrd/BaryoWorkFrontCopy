@@ -1,0 +1,384 @@
+ .imgcont {
+     display: flex;
+     gap: 2em;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     background-color: #0751cc;
+     padding: 1em;
+     border-radius: 10px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ .imgcont img {
+     width: 250px;
+ }
+
+
+
+ .profdeets {
+     align-items: flex-start;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 10px;
+     font-family: Montserrat;
+
+     color: white;
+
+     border-radius: 5px;
+
+     width: 80%;
+ }
+
+ @media (max-width:1040px) {
+     .imgcont img {
+         width: 200px;
+     }
+
+     .profdeets {
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+     }
+
+     .errorism {
+         display: grid;
+         place-items: center;
+     }
+ }
+
+ .profbutts {
+     display: flex;
+     gap: 10px;
+     margin-top: 1em;
+ }
+
+ .profbutts button {
+     padding: .3em .5em;
+     font-family: montserrat;
+     border: none;
+     background-color: white;
+     border-radius: 5px;
+ }
+
+
+ .profexp {
+     margin-top: 2em;
+ }
+
+ .content.no-padding {
+     padding: 0;
+ }
+
+ .landing-buttons a {
+     text-decoration: none;
+     color: #0751cc;
+ }
+
+ .profdeets h3 {
+     font-size: 1.5em;
+ }
+
+ .landing-content-buttons a {
+     text-decoration: none;
+     color: white;
+ }
+
+ .landing-content-buttons button a :hover {
+
+     color: #0751cc;
+ }
+
+ .profexp h2,
+ .profeduc h2 {
+     font-family: archivo;
+     font-weight: 200;
+     margin-bottom: 0.5em;
+ }
+
+ .expcard,
+ .educcard {
+     max-width: 500px;
+     min-width: 300px;
+     align-items: flex-start;
+     margin-bottom: 1.5em;
+     background-color: #0751cc;
+     color: white;
+     padding: 1em;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     gap: 10px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     display: flex;
+     flex-direction: column;
+ }
+
+
+ .exp,
+ .educations {
+     display: flex;
+     gap: 1em;
+     width: 100%;
+     flex-wrap: wrap;
+ }
+
+ .expcard h3,
+ .educcard h3 {
+     font-family: archivo;
+     font-weight: 300;
+     letter-spacing: 1px;
+     font-size: 1.5em;
+ }
+
+ .expcard p,
+ .educcard p {
+     font-family: montserrat;
+     font-weight: 200;
+     font-size: .9em;
+ }
+
+ .expbutts {
+     display: flex;
+     gap: 10px;
+ }
+
+ .expbutts button {
+     min-width: 50px;
+     background: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0.3em 0.5em;
+     font-family: montserrat;
+ }
+
+
+ .expcard p,
+ .educcard p {
+     width: 100%;
+
+     word-break: break-all;
+ }
+
+ .profcreate {
+     background-color: #0751cc;
+ }
+
+ .profconts {
+     display: grid;
+     place-items: center;
+     height: 100%;
+
+ }
+
+ .form-container h1 {
+     color: white;
+     text-align: center;
+     font-size: 1.2em;
+ }
+
+ .form-container form label,
+ .formfield label {
+     color: white;
+     font-family: archivo;
+     font-weight: 200;
+ }
+
+ .profupdate label {
+     color: white;
+     font-family: archivo;
+     font-weight: 200;
+ }
+
+
+ .formfield {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+ }
+
+ .form-container form button {
+     font-family: montserrat;
+     font-weight: 500;
+     padding: .3em .5em;
+     background-color: white;
+     border: none;
+     color: black;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+
+
+ @media (max-width:600px) {
+     .profcreatecont {
+         width: 100%;
+     }
+
+     form input {
+         width: 250px;
+     }
+ }
+
+
+
+
+ .imgprof img {
+     width: 40px;
+ }
+
+ .appnamenav {
+     font-family: archivo;
+     color: white;
+ }
+
+ .profmodal {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     /* Semi-transparent background */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .prof-modal-content {
+     background-color: white;
+     padding: 1em;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+     width: 700px;
+     background-color: #0751cc;
+ }
+
+ .profupdate {
+     display: flex;
+     align-items: center;
+     gap: 1em;
+     justify-content: center;
+ }
+
+ .close {
+     color: white;
+ }
+
+ .formfield2 textarea,
+ .formfield2 input {
+     width: 600px;
+     padding: 1em;
+     border-radius: 5px;
+ }
+
+ .formfield2 label {
+     margin-bottom: .5em;
+ }
+
+ .formbutts button {
+     min-width: 50px;
+     background: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0.3em 0.5em;
+     font-family: montserrat;
+ }
+
+
+ @media (max-width:1040px) {
+     .imgcont {
+         flex-direction: column;
+     }
+
+     .exp,
+     .educations {
+         justify-content: center;
+         margin-bottom: 1em;
+     }
+
+     .expcard,
+     .educcard {
+         max-width: 200px;
+     }
+
+     .profexp h2,
+     .profeduc h2 {
+         text-align: center;
+     }
+
+     .profdeets {
+         width: 100%;
+     }
+
+     .expcard,
+     .educcard {
+         margin-bottom: 10px;
+     }
+
+     .formfield2 textarea,
+     .formfield2 input {
+         width: 100%;
+         padding: 1em;
+         border-radius: 5px;
+     }
+
+     .formfield2 {
+         width: 100%;
+     }
+
+     .prof-modal-content {
+         margin: 1em;
+     }
+ }
+
+ .profupdate h2 {
+     font-family: archivo;
+     font-weight: 200;
+     color: white;
+     margin-bottom: 0.5em;
+ }
+
+ .formfield2 {
+     align-items: flex-start;
+     display: flex;
+     justify-content: center;
+ }
+
+
+ .formbutts {
+     margin: 0 auto;
+ }
+
+
+ .profupdate h2 {
+     text-align: center;
+ }
+
+ .cents {
+     margin: 0 auto;
+     color: white;
+ }
+
+ .prof-modal-content2 {
+     display: flex;
+     color: white;
+     font-family: archivo;
+     flex-direction: column;
+     align-items: center;
+     gap: 1em;
+ }
+
+ .prof-modal-content2 a {
+     text-decoration: none;
+     color: #0751cc;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: .3em .7em;
+     background-color: white;
+
+ }

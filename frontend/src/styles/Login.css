@@ -1,0 +1,145 @@
+/* Login.css */
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0751cc;
+    padding: 2em;
+    width: 500px;
+    border-radius: 20px;
+
+}
+
+.forpass a {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: .7em;
+}
+
+.form-container form .loginbtt {
+    padding: .5em 1.3em;
+    color: #0751cc;
+    font-weight: 700;
+}
+
+
+
+
+
+form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+form ::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #A3A3A3;
+
+}
+
+form input {
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 300px;
+}
+
+.btn-primary {
+    margin-top: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: .6em 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #0751cc;
+    margin-bottom: 4em;
+}
+
+.text {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+.linktext {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.textwicon {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: .8em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+
+.icon {
+    width: 13px;
+    height: 13px;
+}
+
+
+
+@media (max-width:1040px) {
+    .container {
+        background-color: #0751cc;
+    }
+
+    .logincont {
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .header1,
+    .header7 {
+        font-size: 1.3em;
+    }
+
+    .tctext,
+    .tclist,
+    .tctext1,
+    .tctext3 {
+        font-size: .7em;
+    }
+
+    .modal-content {
+        padding: 20px;
+    }
+}
+
+/* Style your terms and conditions content as needed */
+
+/* Style your terms and conditions content as needed */

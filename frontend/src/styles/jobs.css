@@ -1,0 +1,175 @@
+.addlisting button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+    width: 400px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #0751cc;
+    border-radius: 10px;
+    color: white;
+    font-family: Archivo;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.yourjobs {
+    display: flex;
+    font-family: Montserrat;
+    font-size: 1em;
+    gap: 1em;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.perjob {
+    background-color: #0751cc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1em;
+    border-radius: 5px;
+    width: 400px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.perjob h2 {
+    font-family: Archivo;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: .2em;
+}
+
+.perjob p {
+    font-family: montserrat;
+    font-weight: 300;
+    font-size: .8em;
+}
+
+
+.jobbutts {
+    display: flex;
+    gap: 10px;
+    padding-top: 1em;
+    justify-content: center;
+}
+
+.jobbutts button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: archivo;
+    font-weight: 300;
+
+}
+
+.jobtitle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.jobtitle button {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.perjob ul li {
+    margin-left: 2em;
+    font-family: montserrat;
+    font-weight: 300;
+    font-size: .8em;
+}
+
+.jobcreate {
+    margin-bottom: 1em;
+}
+
+.formfield3 input {
+
+    height: 10px;
+    margin-bottom: 0;
+}
+
+.formfield3 textarea {
+    height: 40px;
+}
+
+.jobcreate h2 {
+    margin: 0;
+}
+
+
+.perapplicant {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1em;
+    color: white;
+    font-family: montserrat;
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 2em;
+    gap: 10px;
+}
+
+.perapplicant h4 {
+    margin: 0 auto;
+    margin-bottom: .5em;
+}
+
+
+.jobsapps h2 {
+    font-family: archivo;
+    font-weight: 200;
+    color: white;
+}
+
+.jobsapps {
+    margin: 0 auto;
+}
+
+.contapplicant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jobbutts .buttsuccess {
+    background-color: #55947d;
+    color: white;
+}
+
+.jobbutts .buttreject {
+    background-color: #bc5050;
+    color: white;
+}
+
+.pagination button {
+    width: 80%;
+
+    height: 30px;
+}
+
+@media (max-width:700px) {
+    .perjob {
+        width: 100%;
+    }
+
+    .addlisting button {
+        width: 100%;
+    }
+}

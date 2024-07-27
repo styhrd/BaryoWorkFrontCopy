@@ -1,0 +1,13 @@
+.aj {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 300px;
+
+}
+
+.applied-jobs {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}

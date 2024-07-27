@@ -1,0 +1,337 @@
+.dashlatest {
+    min-width: 300px;
+    background-color: #0751cc;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dashcard h3 {
+    font-family: archivo;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    border-bottom: 1px solid white;
+}
+
+.aj h3 {
+    font-family: archivo;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.aj p {
+    font-family: montserrat;
+    font-weight: 200;
+    font-size: .9em;
+}
+
+.status-circle {
+    border-radius: 50%;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.aj {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0751cc;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.heads {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-circle p {
+    opacity: 0;
+}
+
+.heads {
+    margin-bottom: .5em;
+}
+
+.pages button {
+    cursor: pointer;
+}
+
+.dashlatest p {
+    font-family: montserrat;
+    font-weight: 200;
+    font-size: .9em;
+}
+
+.dashcard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.job-list {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.deets h2 {
+    font-family: archivo;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.abt {
+    max-width: 300px;
+}
+
+.deets p li {
+    margin-left: 10px;
+}
+
+.welc {
+    font-family: montserrat;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.welcies {
+    margin-bottom: 2em;
+
+}
+
+.welcies h1 {
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+
+.header {
+    font-family: archivo;
+    font-weight: 200;
+    margin-bottom: .5em;
+}
+
+.dashlinks {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3em;
+}
+
+.dashlinks a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-family: archivo;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+.dashjobs {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.listings {
+    margin-top: 2em;
+}
+
+.job {
+    padding: 1em;
+    background-color: #0751cc;
+    min-width: 200px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.job h3 {
+    font-family: archivo;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.job p {
+    font-family: montserrat;
+    font-weight: 200;
+    font-size: .9em;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 300px;
+}
+
+.job button a {
+    text-decoration: none;
+    font-family: archivo;
+    font-weight: 300;
+    border: none;
+    background-color: white;
+    padding: 5px;
+}
+
+.job button {
+    text-decoration: none;
+    font-family: archivo;
+    font-weight: 300;
+    border: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.aj button {
+    text-decoration: none;
+    font-family: archivo;
+    font-weight: 300;
+    border: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width:1040px) {
+    .job-list {
+        justify-content: center;
+    }
+
+    .dashlinks {
+        flex-direction: column;
+        margin-bottom: 1em;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .applied-jobs {
+        justify-content: center;
+    }
+
+    .dashjobs {
+        justify-content: center;
+    }
+
+    .welcies {
+        text-align: center;
+    }
+
+    .dashlinks a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        padding: 1em;
+    }
+}
+
+@media (max-width:700px) {
+    .dashlatest {
+        min-width: 0;
+    }
+
+    .dashcard h3 {
+        font-size: 1em;
+    }
+
+    .aj h3 {
+        font-size: 1em;
+    }
+
+    .job h3 {
+        font-size: 1em;
+    }
+
+    .job p {
+        font-size: .7em;
+    }
+
+    .aj p {
+        font-size: .7em;
+    }
+
+    .status-circle p {
+        font-size: 1em;
+    }
+
+    .dashcard p {
+
+        font-size: .6em;
+
+    }
+
+    .applied-jobs .aj {
+        min-width: 200px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .dashlatest {
+        width: 100%;
+    }
+
+    .dashcard h3 {
+        font-size: 1em;
+    }
+
+    .dashcard p {
+
+        font-size: .6em;
+
+    }
+
+    .aj {
+        width: 100%;
+    }
+
+    .job {
+        width: 100%;
+    }
+
+
+
+}
+
+
+.addimage h2 {
+    font-family: archivo;
+    font-weight: 200;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: -1em;
+}
+
+.addimage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cret {
+    margin-bottom: 2em;
+}
