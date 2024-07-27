@@ -23,7 +23,7 @@ const Register = () => {
                 return alert('Provide All Fields');
             }
             setLoading(true); // Show loading spinner
-            const { data } = await axios.post('http://localhost:8080/api/v1/auth/register', { fullname, email, password });
+            const { data } = await axios.post('https://baryoworkcopyapi.onrender.com/api/v1/auth/register', { fullname, email, password });
             setLoading(false); // Hide loading spinner
             if (data.success) {
                 toast.success('Registered Successfully');
